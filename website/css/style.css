@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+#headerholder
+{
+	
+}
+#jbholder
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #16cbf4;
+}
+#snholder
+{
+	position: absolute;
+	background-color: #f56527;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 80%;
+	 transform:rotate(-45deg);
+     -o-transform:rotate(-45deg);
+     -moz-transform:rotate(-45deg);
+     -webkit-transform:rotate(-45deg);
+}
