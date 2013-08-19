@@ -1,9 +1,33 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*header*/
 #headerholder
 {
 	
 }
+#baseHeader
+{
+	position: absolute;
+	background-color: #232323; /* I HATE writing colour like color ): always fucks up my code because i write colour </3 #firstworldproblems */
+	top: 82px;
+	left: 0px;
+	right: 0px;
+	height: 61px;
+}
+#fancyHeader
+{
+	position: absolute;
+	top: 66px;
+	right: 0px;
+	width: 600px;
+	height: 0px;
+	border-bottom: 100px solid #363636;
+	border-left: 100px solid transparent;
+}
+
+
+/*first panel*/
 #jbholder
 {
 	position: absolute;
@@ -16,13 +40,9 @@
 #snholder
 {
 	position: absolute;
-	background-color: #f56527;
 	top: 0px;
 	right: 0px;
+	left: 50%;
 	bottom: 0px;
-	width: 80%;
-	 transform:rotate(-45deg);
-     -o-transform:rotate(-45deg);
-     -moz-transform:rotate(-45deg);
-     -webkit-transform:rotate(-45deg);
+	background-color: #f56527;
 }
