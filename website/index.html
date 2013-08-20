@@ -5,8 +5,12 @@
 <title>JASPortfolio</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-git2.js"></script>
+<script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
 <!--<script src="js/indexanimatiosn.js"></script>-->
 <script>
+
+$(".fancyHeader").hide();
+
 function UpdateTableHeaders() {
    $(".persist-area").each(function() {
    
@@ -19,10 +23,14 @@ function UpdateTableHeaders() {
            floatingHeader.css({
             "visibility": "visible"
            });
+		   $(".fancyHeader").fadeIn("slow");
+		   $("#fancyHeader").fadeOut("slow");
        } else {
            floatingHeader.css({
             "visibility": "hidden"
-           });      
+           }); 
+		   $(".fancyHeader").fadeOut("slow");  
+		   $("#fancyHeader").fadeIn("fast");   
        };
 	   
 	   if((scrollTop < 980))
@@ -30,11 +38,34 @@ function UpdateTableHeaders() {
 		   floatingHeader.css({
 			  "background-color": "#232323"
 		   });
+		   $(".fancyHeader").css({
+			   "border-bottom": "61px solid #363636",
+			   "color": "white"
+		   });
 	   }
-	   if((scrollTop > 980))
+	   if((scrollTop > 980) && (scrollTop < 1979))
 	   {
 		   floatingHeader.css({
-			  "background-color": "#00ff00"
+			  "background-color": "#000000"
+		   }); 
+		   $(".fancyHeader").css({
+			   "border-bottom": "61px solid #363636",
+			   "color": "white"
+		   });
+	   }
+	   if((scrollTop == 980) || (scrollTop == 1980) || (scrollTop == 82))
+	   {
+		   floatingHeader.fadeOut("fast");  
+		   floatingHeader.fadeIn("fast");
+	   }
+	   if((scrollTop > 1980))
+	   {
+		   floatingHeader.css({
+			  "background-color": "#cacccb"
+		   });
+		   $(".fancyHeader").css({
+			   "border-bottom": "61px solid #fff",
+			   "color": "black"
 		   });
 	   }
    });
@@ -65,12 +96,16 @@ $(function() {
 
 <body>
 	<div id="section1">
-        <div id="jbholder"></div>
+        <div id="jbholder">
+        </div>
         <div id="snholder">
             
         </div>
     </div>
     <div id="section2">
+    
+    </div>
+    <div id="section3">
     
     </div>
     
@@ -79,8 +114,15 @@ $(function() {
         <div class="persist-header baseHeader">
         </div>
         </article>
+        
+        <div class="persist-area">
+ 			<div class="persist-header fancyHeader">
+            	<h1>JASPortfolio</h1>
+            </div>       
+        </div>
+        
         <div id="fancyHeader">
-        	<!--Something will go here -->
+        	<h1>JASPortfolio</h1>
         </div>
     </div>
 </body>
