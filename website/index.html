@@ -2,8 +2,65 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>JASPortfolio</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-git2.js"></script>
+<!--<script src="js/indexanimatiosn.js"></script>-->
+<script>
+function UpdateTableHeaders() {
+   $(".persist-area").each(function() {
+   
+       var el             = $(this),
+           offset         = el.offset(),
+           scrollTop      = $(window).scrollTop(),
+           floatingHeader = $(".floatingHeader", this)
+       
+       if ((scrollTop > 82) /*&& (scrollTop < offset.top + el.height())*/) {
+           floatingHeader.css({
+            "visibility": "visible"
+           });
+       } else {
+           floatingHeader.css({
+            "visibility": "hidden"
+           });      
+       };
+	   
+	   if((scrollTop < 980))
+	   {
+		   floatingHeader.css({
+			  "background-color": "#232323"
+		   });
+	   }
+	   if((scrollTop > 980))
+	   {
+		   floatingHeader.css({
+			  "background-color": "#00ff00"
+		   });
+	   }
+   });
+}
+
+// DOM Ready      
+$(function() {
+
+   var clonedHeaderRow;
+
+   $(".persist-area").each(function() {
+       clonedHeaderRow = $(".persist-header", this);
+       clonedHeaderRow
+         .before(clonedHeaderRow.clone())
+         .css("width", clonedHeaderRow.width()).css("height", clonedHeaderRow.height())
+         .addClass("floatingHeader").removeClass("baseHeader");
+         
+   });
+   
+   $(window)
+    .scroll(UpdateTableHeaders)
+    .trigger("scroll");
+   
+});
+</script>
+
 </head>
 
 <body>
@@ -13,9 +70,15 @@
             
         </div>
     </div>
+    <div id="section2">
+    
+    </div>
+    
 	<div id="headerholder">
-    	<div id="baseHeader">
+    	<article class="persist-area">
+        <div class="persist-header baseHeader">
         </div>
+        </article>
         <div id="fancyHeader">
         	<!--Something will go here -->
         </div>
