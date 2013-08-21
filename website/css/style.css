@@ -125,14 +125,14 @@ body
 	bottom: 0px;
 	background-color: #f56527;
 }
-#sntest{
- width: 100%;
- height: 100%;
- -webkit-transform: skew(135deg);
- -moz-transform: skew(135deg);
- -o-transform: skew(135deg);
- margin-left: -100%;
- background: #16cbf4;
+#sntest {
+ 	width: 100%;
+ 	height: 100%;
+ 		-webkit-transform: skew(135deg);
+ 		-moz-transform: skew(135deg);
+ 		-o-transform: skew(135deg);
+ 	margin-left: -100%;
+ 	background: #16cbf4;
 }
 .floatingHeader {
 	position: fixed;
@@ -146,7 +146,7 @@ body
     transition: background 0.2s linear;
 }
 .persistHeader {
-	background-color: #232323; 
+	background-color: #232323;
 	left: 0px;
 	right: 0px;
 	height: 61px;
@@ -177,6 +177,32 @@ body
     transition: background 0.2s linear;
 }
 
+/*logo - first panel*/
+#logo {
+}
+#jpic {
+	position: absolute;
+	top: 33%;
+	left: 20%; /*please fix this sniper*/
+	width: 320px;
+	height: 320px;
+	background-image: url(../images/logo/jb-transp.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#spic {
+	position: absolute;
+	top: 33%;
+	left: 40%; /*please fix this sniper*/
+	width: 320px;
+	height: 320px;
+	background-image: url(../images/logo/sn-transp.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/*mobile (device-max-width not used for testing)*/
+/*disabled
 @media only screen and (max-width: 1000px) {
 	.baseHeader {
 		height: 50px;
