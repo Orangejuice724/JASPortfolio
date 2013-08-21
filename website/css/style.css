@@ -162,3 +162,17 @@ body
     -o-transition: background 0.2s linear;
     transition: background 0.2s linear;
 }
+
+@media only screen and (max-device-width: 480px) {
+	#fancyHeader {
+		width: 200px;
+	}
+	.persistHeader {
+		height: 30px;
+	}
+	.fancyHeader {
+		width: 200px;
+		border-bottom: 10px solid #363636;
+		border-left: 10px solid transparent;
+	}
+}
