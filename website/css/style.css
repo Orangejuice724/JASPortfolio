@@ -163,7 +163,7 @@ body
     transition: background 0.2s linear;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 1000px) {
 	#fancyHeader {
 		width: 200px;
 	}
@@ -172,7 +172,7 @@ body
 	}
 	.fancyHeader {
 		width: 200px;
-		border-bottom: 10px solid #363636;
+		border-bottom: 10px solid #60C;
 		border-left: 10px solid transparent;
 	}
 }
