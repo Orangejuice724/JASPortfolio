@@ -183,21 +183,21 @@ body
 #jpic {
 	position: absolute;
 	top: 33%;
-	left: 20%; /*please fix this sniper*/
+	left: 25%; /*please fix this sniper*/
 	width: 320px;
 	height: 320px;
 	background-image: url(../images/logo/jb-transp.png);
-	background-size: 100% 100%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 #spic {
 	position: absolute;
 	top: 33%;
-	left: 40%; /*please fix this sniper*/
+	right: 24%; /*please fix this sniper*/
 	width: 320px;
 	height: 320px;
 	background-image: url(../images/logo/sn-transp.png);
-	background-size: 100% 100%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
