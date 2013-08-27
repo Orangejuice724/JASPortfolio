@@ -1,0 +1,53 @@
+/* CSS Document */
+body
+{
+	min-width: 1200px;
+}
+
+#header-container
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 124px;
+	background-color: #fff;
+}
+
+#section1
+{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background-image: url(../images/bg/mainbg.jpg);
+}
+#s1-pic
+{
+	position: absolute;
+	display: block;
+	min-width: 1200px;
+	max-width: 1200px;
+	min-height: 480px;
+	max-height: 480px;
+	background-color: #f56527;
+	
+	margin-left: -600px;
+	left: 50%;
+	margin-top: -240px;
+	top: 50%;
+}
+
+#triangle
+{
+	position: relative;
+	right: 0px;
+	top: 480px;
+	left: 1136px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 64px 64px 0 0;
+	border-color: #cc5421 transparent transparent transparent;
+}
